@@ -24,7 +24,6 @@
 # -----------------------------------
 # -------- Policy Group(Extra)
 # -----------------------------------
-􀇥 Blizzard = select, ""􁞴 Nexitally@US", "􀷎 Direct", hidden=true, no-alert=false
 􀺧 Discord = select, "􀬚 Airplane", hidden=true, no-alert=false
 􀈠 Telegram = select, "􀬚 Airplane", hidden=true, no-alert=false
 􀚅 Slack = select, "􀬚 Airplane", hidden=true, no-alert=false
@@ -50,8 +49,8 @@
 # -------- Airport Group
 # -----------------------------------
 􀋑 Proxy = select, "􀬚 Airplane", hidden=true
-􀷰 All_Proxy = select, include-other-group="􁞴 Nexitally", hidden=true
-􀷰 Special_Proxy = select, include-other-group="􁞴 Nexitally", policy-regex-filter=IEPL|IPLC, hidden=true
+􀷰 All_Proxy = select, include-other-group=􁞴 Nexitally, hidden=true
+􀷰 Special_Proxy = select, include-other-group=􁞴 Nexitally, policy-regex-filter=IEPL|IPLC, hidden=true
 
 # -----------------------------------
 # -------- Proxy Group

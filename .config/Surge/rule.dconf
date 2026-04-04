@@ -1,4 +1,13 @@
 [Rule]
+PROCESS-NAME,/Applications/Claude.app/,"􁍎 OpenAI"
+DOMAIN-SUFFIX,claude.com,"􁞴 Nexitally@US"
+DOMAIN-SUFFIX,claude.ai,"􁍎 OpenAI"
+DOMAIN-SUFFIX,google.com,"􀬚 Airplane"
+DOMAIN-SUFFIX,google.com,"􀬚 Airplane"
+DOMAIN-SUFFIX,google.com,"􁍎 OpenAI"
+DOMAIN-SUFFIX,google.com,"􀬚 Airplane"
+DOMAIN-SUFFIX,google.com,"􁝯 AI Proxies"
+DOMAIN-SUFFIX,google.com,"􁝯 AI Proxies"
 PROCESS-NAME,/Applications/SunloginClient.app/Contents/MacOS/SunloginClient,DIRECT
 PROCESS-NAME,/Applications/Claude.app/Contents/MacOS/Claude,"􁍎 OpenAI"
 DOMAIN-SUFFIX,tunnelblick.net,"􀷎 Direct"
@@ -13,6 +22,9 @@ DOMAIN-SUFFIX,hzs19.cnzz.com,"􀍼 Reject"
 DOMAIN-SUFFIX,c.cnzz.com,"􀍼 Reject"
 DOMAIN-SUFFIX,w.cnzz.com,"􀍼 Reject"
 DOMAIN-SUFFIX,tcss.qq.com,"􀍼 Reject"
+DOMAIN-SUFFIX,gemini.google.com,"􁍎 OpenAI"
+DOMAIN-SUFFIX,aistudio.google.com,"􁍎 OpenAI"
+DOMAIN-SUFFIX,makersuite.google.com,"􁍎 OpenAI"
 IP-CIDR,172.16.0.0/12,"􀷎 Direct"
 IP-CIDR,119.45.33.216/32,"􀷎 Direct"
 IP-CIDR,47.111.139.140/32,"􀷎 Direct"
@@ -53,7 +65,6 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list,"􁍎 OpenAI",extended-matching,"update-interval=172800",no-resolve
 
 # Game
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Blizzard/Blizzard.list,"􀇥 Blizzard",extended-matching,"update-interval=172800",no-resolve
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list,"􀑑 GGame",extended-matching,"update-interval=172800",no-resolve
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/SteamCN/SteamCN.list,"􀷎 Direct",extended-matching,"update-interval=172800",no-resolve
 

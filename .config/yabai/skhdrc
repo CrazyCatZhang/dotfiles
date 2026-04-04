@@ -1,3 +1,4 @@
+.blacklist [ "kitty" ]
 # opens iTerm2
 alt - return : "${HOME}"/.config/yabai/scripts/open_iterm2.sh
 

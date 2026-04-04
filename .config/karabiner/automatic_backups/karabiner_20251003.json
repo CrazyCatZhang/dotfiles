@@ -3951,8 +3951,12 @@
                     "ignore": false,
                     "simple_modifications": [
                         {
-                            "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
-                            "to": [{ "key_code": "f20" }]
+                            "from": { "key_code": "escape" },
+                            "to": [{ "key_code": "f19" }]
+                        },
+                        {
+                            "from": { "key_code": "home" },
+                            "to": [{ "key_code": "f16" }]
                         }
                     ]
                 },
@@ -3961,19 +3965,6 @@
                         "is_keyboard": true,
                         "product_id": 832,
                         "vendor_id": 1452
-                    },
-                    "simple_modifications": [
-                        {
-                            "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
-                            "to": [{ "key_code": "f20" }]
-                        }
-                    ]
-                },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 88,
-                        "vendor_id": 9610
                     },
                     "simple_modifications": [
                         {
@@ -4005,12 +3996,8 @@
                     "to": [{ "key_code": "escape" }]
                 },
                 {
-                    "from": { "key_code": "escape" },
-                    "to": [{ "key_code": "f18" }]
-                },
-                {
                     "from": { "key_code": "right_shift" },
-                    "to": [{ "key_code": "f16" }]
+                    "to": [{ "key_code": "home" }]
                 }
             ],
             "virtual_hid_keyboard": {

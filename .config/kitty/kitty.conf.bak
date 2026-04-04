@@ -3,11 +3,11 @@
 # https://sw.kovidgoyal.net/kitty/conf/
 
 # To get a full list of supported fonts use the `kitty +list-fonts` command.
-font_family			 MonaspiceRn Nerd Font Propo Bold
-bold_font				 MonaspiceRn Nerd Font Propo Bold
-italic_font      MonaspiceRn Nerd Font Propo Medium Italic
-bold_italic_font MonaspiceRn Nerd Font Propo Bold Italic
-font_size 14.0
+font_family			 CaskaydiaCove Nerd Font Mono
+bold_font				 CaskaydiaCove Nerd Font Mono Bold
+italic_font      CaskaydiaCove Nerd Font Mono Medium Italic
+bold_italic_font CaskaydiaCove Nerd Font Mono Bold Italic
+font_size 17.0
 
 scrollback_lines 8000
 
@@ -90,15 +90,10 @@ visual_window_select_characters 1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ
 # see https://sw.kovidgoyal.net/kitty/conf/#opt-kitty.confirm_os_window_close
 confirm_os_window_close -1
 
-
-tab_bar_style powerline
-
-
-
-# emoji from https://emojipedia.org/regional-indicator-symbol-letter-z/
-# title parse see https://github.com/kovidgoyal/kitty/blob/587f44ad4eb7fe545b0e580168cf0c32117b87c7/kitty/tab_bar.py#L175
-tab_title_template "{fmt.fg.red}{bell_symbol}{activity_symbol}{fmt.fg.tab}{index}:{'🇿' if layout_name == 'stack' and num_windows > 1 else ''}{title}"
-
+tab_bar_edge              bottom
+tab_bar_align             center
+tab_bar_style             custom
+tab_bar_margin_height     10.0 0.0
 
 
 #: The foreground and background colors
@@ -270,10 +265,8 @@ map ctrl+a>shift+r combine : load_config_file : launch --type=overlay --hold --a
 
 map ctrl+a>shift+d     debug_config
 
-
-
 # BEGIN_KITTY_THEME
-# ENCOM
+# Neowave
 include current-theme.conf
 # END_KITTY_THEME
 
@@ -306,5 +299,4 @@ remember_window_size  yes
 macos_traditional_fullscreen yes
 
 # option ---> alt
-macos_option_as_alt yes
-
+macos_option_as_alt both
