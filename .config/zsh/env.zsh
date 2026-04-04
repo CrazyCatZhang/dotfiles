@@ -16,11 +16,6 @@ if [[ ":$PATH:" != *":/usr/local/opt/openjdk/bin:"* ]]; then
 fi
 export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 
-if [[ ":$PATH:" != *":/usr/local/opt/ruby@3.1/bin:"* ]]; then
-    export PATH="/usr/local/opt/ruby@3.1/bin:$PATH"
-fi
-export LDFLAGS="-L/usr/local/opt/ruby@3.1/lib"
-export CPPFLAGS="-I/usr/local/opt/ruby@3.1/include"
 
 export PKG_CONFIG_PATH="/usr/local/opt/xcb-util-image/lib/pkgconfig:$PKG_CONFIG_PATH"
 

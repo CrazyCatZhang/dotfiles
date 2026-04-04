@@ -13,11 +13,11 @@
 􀥲 Mainland = select, "􀷎 Direct", "􀥠 OutSide", hidden=false, no-alert=false
 􀪱 Apple = select, "􀷎 Direct", "􀥠 OutSide", hidden=false, no-alert=false
 􀍟 Apple Update = select, "􀥠 OutSide", "􀷎 Direct", "􀍼 Reject", hidden=false, no-alert=false
-􀇼 AdBlock = select, "􀥠 OutSide", "􀍼 Reject", "􀷎 Direct", hidden=false, no-alert=false
+􀇼 AdBlock = select, "􀍼 Reject", "􀷎 Direct", "􀥠 OutSide", hidden=false, no-alert=false
 􂅿 CMedia = select, "􀷎 Direct", "􁐇 Movie Proxies@HK", "􁐇 Movie Proxies@TW", hidden=false, no-alert=false
 􂆀 GMedia = select, "􀥠 OutSide", "􀷎 Direct", hidden=false, no-alert=false
 􀑑 GGame = select, "􀥠 OutSide", "􀷎 Direct", hidden=false, no-alert=false
-􁍎 OpenAI = select, "􁝯 AI Proxies", "􁞴 Nexitally@US", hidden=false, no-alert=false
+􁍎 OpenAI = select, "􁝯 AI Proxies", "􀥠 OutSide", hidden=false, no-alert=false
 􀬗 Speedtest = select, "􀥠 OutSide", "􀷎 Direct", hidden=false, no-alert=false
 􀫎 Others = select, "􀥠 OutSide", "􀷎 Direct", hidden=false, no-alert=false
 
@@ -43,20 +43,20 @@
 # -----------------------------------
 # -------- Airport Policy
 # -----------------------------------
-􁞴 Nexitally = smart, policy-path=https://sub.store/download/Nexitally, update-interval=172800, hidden=true
+􁞴 Hive = smart, policy-path=https://sub.store/download/collection/Hive, update-interval=172800, hidden=true
 
 # -----------------------------------
 # -------- Airport Group
 # -----------------------------------
-􀋑 Proxy = select, "􀬚 Airplane", hidden=true
-􀷰 All_Proxy = select, include-other-group=􁞴 Nexitally, hidden=true
-􀷰 Special_Proxy = select, include-other-group=􁞴 Nexitally, policy-regex-filter=IEPL|IPLC, hidden=true
+􀋑 Proxy = select, "􀬚 Airplane", "􀷎 Direct", hidden=true
+􀷰 All_Proxy = select, include-other-group=􁞴 Hive, hidden=true
+􀷰 Special_Proxy = select, include-other-group=􁞴 Hive, policy-regex-filter=IEPL|IPLC, hidden=true
 
 # -----------------------------------
 # -------- Proxy Group
 # -----------------------------------
-􀵵 Aisa Proxies(DL) = smart, include-other-group=􀷰 Special_Proxy, policy-regex-filter=(HK|Hong Kong|TW|Taiwan|SG|Singapore|JP|Japan|Korea|United Arab Emirates|India|Indonesia), hidden=true, no-alert=false, evaluate-before-use=true
-􀵵 Aisa Proxies = smart, include-other-group=􀷰 All_Proxy, policy-regex-filter=(HK|Hong Kong|TW|Taiwan|SG|Singapore|JP|Japan|Korea|United Arab Emirates|India|Indonesia), hidden=true, no-alert=false, evaluate-before-use=true
+􀵵 Asia Proxies(DL) = smart, include-other-group=􀷰 Special_Proxy, policy-regex-filter=(HK|Hong Kong|TW|Taiwan|SG|Singapore|JP|Japan|Korea|United Arab Emirates|India|Indonesia), hidden=true, no-alert=false, evaluate-before-use=true
+􀵵 Asia Proxies = smart, include-other-group=􀷰 All_Proxy, policy-regex-filter=(HK|Hong Kong|TW|Taiwan|SG|Singapore|JP|Japan|Korea|United Arab Emirates|India|Indonesia), hidden=true, no-alert=false, evaluate-before-use=true
 􀵳 Europe Proxies(DL) = smart, include-other-group=􀷰 Special_Proxy, policy-regex-filter=(UK|Netherlands|Germany|France|Switzerland|Sweden|Bulgaria|Austria|Ireland|Turkey|Hungary|Russia|EE|DE|NL), hidden=true, no-alert=false, evaluate-before-use=true
 􀵳 Europe Proxies = smart, include-other-group=􀷰 All_Proxy, policy-regex-filter=(UK|Netherlands|Germany|France|Switzerland|Sweden|Bulgaria|Austria|Ireland|Turkey|Hungary|Russia|EE|DE|NL), hidden=true, no-alert=false, evaluate-before-use=true
 􀵱 Americas Proxies(DL) = smart, include-other-group=􀷰 Special_Proxy, policy-regex-filter=(US|USA|Canada|Brazil|Argentina|Chile), hidden=true, no-alert=false, evaluate-before-use=true
@@ -66,5 +66,4 @@
 􁝯 AI Proxies = smart, include-other-group=􀷰 All_Proxy, policy-regex-filter=(US|USA), hidden=true, no-alert=false, evaluate-before-use=true
 􁐇 Movie Proxies@HK = smart, include-other-group=􀷰 All_Proxy, policy-regex-filter=(HK|Hong Kong), hidden=true, no-alert=false, evaluate-before-use=true
 􁐇 Movie Proxies@TW = smart, include-other-group=􀷰 All_Proxy, policy-regex-filter=(TW|Taiwan), hidden=true, no-alert=false, evaluate-before-use=true
-􁞴 Nexitally@US = smart, include-other-group=􁞴 Nexitally, policy-regex-filter=(US|USA), hidden=true, no-alert=false, evaluate-before-use=true
-􀥠 OutSide = fallback, "􀵵 Aisa Proxies(DL)", "􀵱 Americas Proxies(DL)", "􀵳 Europe Proxies(DL)", "􁇲 Central Proxies(DL)", "􀵵 Aisa Proxies", "􀵱 Americas Proxies", "􀵳 Europe Proxies", "􁇲 Central Proxies", hidden=true, no-alert=false, interval=1800, timeout=2, evaluate-before-use=true
+􀥠 OutSide = fallback, "􀵵 Asia Proxies(DL)", "􀵱 Americas Proxies(DL)", "􀵳 Europe Proxies(DL)", "􁇲 Central Proxies(DL)", "􀵵 Asia Proxies", "􀵱 Americas Proxies", "􀵳 Europe Proxies", "􁇲 Central Proxies", hidden=true, no-alert=false, interval=1800, timeout=2, evaluate-before-use=true

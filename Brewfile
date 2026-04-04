@@ -1,4 +1,3 @@
-tap "blacktop/tap"
 tap "buo/cask-upgrade"
 tap "deskflow/tap"
 tap "felixkratz/formulae"
@@ -7,19 +6,12 @@ tap "homebrew/services"
 tap "jesseduffield/lazygit"
 tap "jstkdng/programs"
 tap "koekeishiya/formulae"
-tap "lencx/chatgpt", "https://github.com/lencx/ChatGPT.git"
 tap "mongodb/brew"
 tap "pkgxdev/made"
 tap "supabase/tap"
 tap "wez/wezterm"
-# Shell extension to jump to frequently used directories
-brew "autojump"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# Emacs dependency management
-brew "cask"
-# Like cat but displays content with syntax highlighting
-brew "ccat"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
 # Statistics utility to count lines of code
@@ -30,10 +22,6 @@ brew "cmake"
 brew "cmake-docs"
 # Dependency Manager for PHP
 brew "composer"
-# Pure Scala Artifact Fetching
-brew "coursier"
-# Reimplementation of ctags(1)
-brew "ctags"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
 # Isolated development environments using Docker
@@ -48,10 +36,6 @@ brew "fd"
 brew "ffmpeg@6"
 # Create thumbnails for your video files
 brew "ffmpegthumbnailer"
-# Banner-like program prints strings as ASCII art
-brew "figlet"
-# macOS CLI for managing custom icons for files and folders
-brew "fileicon"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
@@ -70,26 +54,16 @@ brew "gopls"
 brew "hadolint"
 # Tools and libraries to manipulate images in select formats
 brew "imagemagick"
-# Ranger-like terminal file manager written in Rust
-brew "joshuto"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Fast, Dynamic Programming Language
-brew "julia"
 # Simple terminal UI for git commands
 brew "lazygit"
-# Next-gen compiler infrastructure
-brew "llvm"
 # Clone of ls with colorful output, file type icons, and more
 brew "lsd"
 # Language Server for the Lua language
 brew "lua-language-server"
-# Tool for linting and static analysis of Lua code
-brew "luacheck"
 # Package manager for the Lua programming language
 brew "luarocks"
-# System information fetcher, with an emphasis on performance and minimalism
-brew "macchina"
 # Mac App Store command-line interface
 brew "mas"
 # Java-based project management
@@ -98,42 +72,28 @@ brew "maven"
 brew "mise"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Create, run, and share large language models (LLMs)
-brew "ollama"
 # Open source computer vision library
 brew "opencv"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Friendly PIL fork (Python Imaging Library)
 brew "pillow"
-# Execute binaries from Python packages in isolated environments
-brew "pipx"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
 # Implementation of OpenGL 3.x-ish in clean C
 brew "portablegl"
 # Theme for zsh
 brew "powerlevel10k"
-# Bundle a Python application and all its dependencies
-brew "pyinstaller"
-# CPU/RAM/battery stats chart bar for tmux (and GNU screen)
-brew "rainbarf"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
-# Powerful, clean, object-oriented scripting language
-brew "ruby@3.1"
 # Rust toolchain installer
 brew "rustup"
 # Easily detect and prevent bugs and anti-patterns in your codebase
 brew "semgrep"
-# Static http server anywhere you need one
-brew "serve"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Autoformat shell script source code
 brew "shfmt"
-# Create beautiful image of your source code
-brew "silicon"
 # Command-line tool to customize Spotify client
 brew "spicetify-cli"
 # Cross-shell prompt for astronauts
@@ -144,14 +104,8 @@ brew "stow"
 brew "stylua"
 # Modern and pretty fancy file manager for the terminal
 brew "superfile"
-# Change macOS audio source from the command-line
-brew "switchaudio-osx"
 # Feature-rich console based todo list manager
 brew "task"
-# User interface to the TELNET protocol
-brew "telnet"
-# Code-search similar to ack
-brew "the_silver_searcher"
 # Command-line time tracking application
 brew "timewarrior"
 # Manage complex tmux sessions easily
@@ -160,8 +114,6 @@ brew "tmuxinator"
 brew "tokei"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
-# Command-line unarchiving tools supporting multiple formats
-brew "unar"
 # Syntax-aware linter for prose
 brew "vale"
 # Vi 'workalike' with many additional features
@@ -172,28 +124,18 @@ brew "viu"
 brew "wget"
 # XCB port of Xlib's XImage and XShmImage
 brew "xcb-util-image"
-# Access X11 clipboards from the command-line
-brew "xclip"
-# JavaScript package manager
-brew "yarn"
 # Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
-# Programming language designed for robustness, optimality, and clarity
-brew "zig"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# Organize Your macOS Launchpad Apps
-brew "blacktop/tap/lporg"
 # Custom macOS statusbar with shell plugin, interaction and graph support
 brew "felixkratz/formulae/sketchybar"
-# Turns macOS input fields into real vim buffers
-brew "felixkratz/formulae/svim"
 # Terraform
 brew "hashicorp/tap/terraform"
 # Simple hotkey-daemon for macOS.
@@ -220,22 +162,19 @@ cask "apifox"
 cask "appcleaner"
 # Chromium based browser
 cask "arc"
-# Remote desktop control and monitoring tool
-cask "awesun"
 # Audio utility
 cask "background-music"
 # Replacement of the default battery indicator in the menu bar
 cask "battery-buddy"
 # Official bilibili video streaming and sharing platform
 cask "bilibili"
+cask "capcut"
 # Web debugging Proxy application
 cask "charles"
 # Tool to list all active shortcuts of the current application
 cask "cheatsheet"
 # Anthropic's official Claude AI desktop app
 cask "claude"
-# App for building websites
-cask "codekit"
 # Write, edit, and chat about your code with AI
 cask "cursor"
 # Teamwork app by Alibaba Group
@@ -260,8 +199,6 @@ cask "fork"
 cask "google-chrome"
 # Desktop automation application
 cask "hammerspoon"
-# HTML editor
-cask "hbuilderx"
 # Free and open-source media player
 cask "iina"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -276,14 +213,8 @@ cask "karabiner-elements"
 cask "keka"
 # GPU-based terminal emulator
 cask "kitty"
-# Drop any files to any devices on your LAN
-cask "landrop"
 # Open-source cross-platform alternative to AirDrop
 cask "localsend"
-# Cable-free audio router
-cask "loopback"
-# Penetration testing framework
-cask "metasploit"
 # Online collaborative whiteboard platform
 cask "miro"
 # Smooths scrolling and set mouse scroll directions independently
@@ -340,20 +271,14 @@ cask "skim"
 cask "slack"
 # Snip or pin screenshots
 cask "snipaste"
-# Graphical client for Git version control
-cask "sourcetree"
 # Music streaming service
 cask "spotify"
-# Rime input method engine
-cask "squirrel-app"
 # Video game digital distribution service
 cask "steam"
 # Text editor for code, markup and prose
 cask "sublime-text"
 # Network toolbox
 cask "surge"
-# Real time file synchronisation software
-cask "syncthing-app"
 # Sync and backup service to Synology NAS drives
 cask "synology-drive"
 # Native GUI tool for relational databases
@@ -366,16 +291,10 @@ cask "tencent-meeting"
 cask "termius"
 # VPN and WiFi proxy
 cask "thunder"
-# Customizable email client
-cask "thunderbird"
-# Utility for producing audio feedback when typing
-cask "tickeys"
 # Git client focusing on power and productivity
 cask "tower"
 # Configurable document editor that supports Markdown
 cask "typora"
-# OpenVPN client with AppleScript support
-cask "viscosity"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player

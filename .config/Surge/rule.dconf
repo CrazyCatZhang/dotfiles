@@ -1,31 +1,15 @@
 [Rule]
-PROCESS-NAME,/Applications/Claude.app/,"􁍎 OpenAI"
-DOMAIN-SUFFIX,claude.com,"􁞴 Nexitally@US"
 DOMAIN-SUFFIX,claude.ai,"􁍎 OpenAI"
-DOMAIN-SUFFIX,google.com,"􀬚 Airplane"
-DOMAIN-SUFFIX,google.com,"􀬚 Airplane"
-DOMAIN-SUFFIX,google.com,"􁍎 OpenAI"
-DOMAIN-SUFFIX,google.com,"􀬚 Airplane"
-DOMAIN-SUFFIX,google.com,"􁝯 AI Proxies"
-DOMAIN-SUFFIX,google.com,"􁝯 AI Proxies"
+DOMAIN-SUFFIX,nxonearth.com,DIRECT
 PROCESS-NAME,/Applications/SunloginClient.app/Contents/MacOS/SunloginClient,DIRECT
 PROCESS-NAME,/Applications/Claude.app/Contents/MacOS/Claude,"􁍎 OpenAI"
 DOMAIN-SUFFIX,tunnelblick.net,"􀷎 Direct"
 DOMAIN-SUFFIX,openxlab.org.cn,"􀷎 Direct"
 DOMAIN-SUFFIX,google-analytics.com,"􀍼 Reject"
-DOMAIN-SUFFIX,googleadservices.com,"􀀑 Google"
-DOMAIN-SUFFIX,hm.baidu.com,"􀍼 Reject"
-DOMAIN-SUFFIX,cpro.baidu.com,"􀍼 Reject"
-DOMAIN-SUFFIX,p.tanx.com,"􀍼 Reject"
-DOMAIN-SUFFIX,s5.cnzz.com,"􀍼 Reject"
-DOMAIN-SUFFIX,hzs19.cnzz.com,"􀍼 Reject"
-DOMAIN-SUFFIX,c.cnzz.com,"􀍼 Reject"
-DOMAIN-SUFFIX,w.cnzz.com,"􀍼 Reject"
-DOMAIN-SUFFIX,tcss.qq.com,"􀍼 Reject"
+DOMAIN-SUFFIX,googleadservices.com,"􀍼 Reject"
 DOMAIN-SUFFIX,gemini.google.com,"􁍎 OpenAI"
 DOMAIN-SUFFIX,aistudio.google.com,"􁍎 OpenAI"
 DOMAIN-SUFFIX,makersuite.google.com,"􁍎 OpenAI"
-IP-CIDR,172.16.0.0/12,"􀷎 Direct"
 IP-CIDR,119.45.33.216/32,"􀷎 Direct"
 IP-CIDR,47.111.139.140/32,"􀷎 Direct"
 # *********************************** TEST END ***********************************
@@ -33,10 +17,8 @@ IP-CIDR,47.111.139.140/32,"􀷎 Direct"
 # ========================= No Resolve Rule Set =========================
 # Common
 RULE-SET,SYSTEM,"􀷎 Direct",extended-matching,no-resolve
-RULE-SET,https://s1.trojanflare.one/Surge/Basic/Apple-direct.list,"􀪱 Apple"
-RULE-SET,https://s1.trojanflare.one/Surge/Basic/CN.list,"􀥲 Mainland"
-RULE-SET,https://s1.trojanflare.one/Surge/Basic/common-ad-keyword.list,"􀠱 Reject-TingGif"
-RULE-SET,https://s1.trojanflare.one/Surge/Basic/foreign.list,"􀋑 Proxy"
+RULE-SET,https://s1.trojanflare.one/Surge/Basic/Apple-direct.list,"􀪱 Apple",extended-matching,no-resolve
+RULE-SET,https://s1.trojanflare.one/Surge/Basic/common-ad-keyword.list,"􀠱 Reject-TingGif",extended-matching,no-resolve
 
 # Communication
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list,"􀈠 Telegram",extended-matching,no-resolve
@@ -71,7 +53,9 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 # Pay
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list,"􀍯 PayPal",extended-matching,"update-interval=172800",no-resolve
 
-# Bonjour
+# Catch-all
+RULE-SET,https://s1.trojanflare.one/Surge/Basic/CN.list,"􀥲 Mainland",extended-matching,no-resolve
+RULE-SET,https://s1.trojanflare.one/Surge/Basic/foreign.list,"􀋑 Proxy",extended-matching,no-resolve
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cloudflare/Cloudflare.list,"􀋑 Proxy",extended-matching,"update-interval=172800",no-resolve
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaMax/ChinaMax_All_No_Resolve.list,"􀥲 Mainland",extended-matching,"update-interval=172800",no-resolve
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global_All_No_Resolve.list,"􀋑 Proxy",extended-matching,"update-interval=172800",no-resolve
@@ -84,7 +68,7 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 RULE-SET,LAN,"􀷎 Direct",extended-matching
 
 # ========================= Process Rule Set =========================
-# Fulters by Application
+# Filters by Application
 PROCESS-NAME,/Applications/Syncthing.app/Contents/Resources/syncthing/syncthing,"􀷎 Direct"
 
 # ========================= Not Hit or DNS failed =========================
